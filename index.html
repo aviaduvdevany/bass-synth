@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bass Synth</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="popup active" id="popup">
+    <div class="popup-header">
+        <div class="popup-title"><h2>SJS Bass-1</h2></div>
+    </div>
+    <div class="popup-body">
+        <p>For best experience use a MIDI controller</p>
+        <div id="start-container">
+            <button id="start-button">START</button>
+            </div>
+    </div>
+</div>
+<div id="overlay" class="active"></div>
+<div id="wrapper">
+    <h1>SJS Bass-1</h1>
+    <p>A powerfull monophonic bass synthesizer</p>
+    <ul id="keyboard">
+        <li id="A" class="keys white">A</li>
+        <li id="W" class="keys black">W</li>
+        <li id="S" class="keys white offset">S</li>
+        <li id="E" class="keys black">E</li>
+        <li id="D" class="keys white offset">D</li>
+        <li id="F" class="keys white">F</li>
+        <li id="T" class="keys black">T</li>
+        <li id="G" class="keys white offset">G</li>
+        <li id="Y" class="keys black">Y</li>
+        <li id="H" class="keys white offset">H</li>
+        <li id="U" class="keys black">U</li>
+        <li id="J" class="keys white offset">J</li>
+        <li id="K" class="keys white">K</li>
+        <li id="O" class="keys black">O</li>
+        <li id="L" class="keys white offset">L</li>
+        <li id="P" class="keys black">P</li>
+        <li id=";" class="keys white offset">;</li>
+      </ul>
+    <div id="controls">
+    <div id="waveform-container1" class="containers">
+        <h2>OSC1</h2>
+            <select name="waveforms" id="waveform1-select" class="dropdown">
+                <option value="sawtooth">Sawtooth</option>
+                <option value="square">Square</option>
+                <option value="triangle">Triangle</option>
+                <option value="sine">Sine</option>
+            </select>
+        </div>
+        <div id="mix-container" class="containers">
+            <h2>MIX</h2>
+        <label for="mix">|~|</label>
+        <input type="range" name="mix" id="mix-slider" min="0" max="1" step="0.001">
+        </div>
+    <div id="waveform-container2" class="containers">
+        <h2>OSC2</h2>
+        <select name="waveforms" id="waveform2-select" class="dropdown">
+            <option value="sawtooth">Sawtooth</option>
+            <option value="square">Square</option>
+            <option value="triangle">Triangle</option>
+            <option value="sine">Sine</option>
+        </select>
+    </div>
+        <div id="filter-container" class="containers">
+            <h2>LPF</h2>
+            <label for="LPF">Freq</label>
+            <input type="range" name="LPF" id="filter" min="0" max="10000">
+            <label for="resonance">Reso</label>
+            <input type="range" name="resonance" id="resonance" min="0.001" max="20"    >
+        </div>
+        <div id="octave-select" class="containers">
+            <h2>OCTAVE</h2>
+            <div id="arrows-container">
+                <p class="arrows" id="left-arrow">&LeftArrow;</p>
+                <p id="octave-display">0</p>
+                <p class="arrows" id="right-arrow">&RightArrow;</p>
+            </div>
+        </div>
+        <div id="adsr" class="containers">
+            <h2>ADSR</h2>
+            <div id="arrows-container">
+                coming soon...
+            </div>
+        </div>
+    </div> 
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
