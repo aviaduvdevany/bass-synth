@@ -303,18 +303,19 @@ h2 {
     height: 100%;
 }
 
-  #E2,
-  #Ds2,
-  #D2,
-  #Cs2,
-  #C2,
-  #B,
-  #As,
-  #A,
-  #Gs,
-  #G {
+  #G,
+  #Y,
+  #H,
+  #U,
+  #J,
+  #K,
+  #O,
+  #L,
+  #P,
+  .semicolon {
     display: none;
   }
+
 
   .containers {
     padding: 0 0;
